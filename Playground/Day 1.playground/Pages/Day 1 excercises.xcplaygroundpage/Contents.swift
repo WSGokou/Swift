@@ -92,8 +92,10 @@ print(optIntTwo)
 
 // Excercise 18
 let value: Int? = 17
-let banana: Int = value! // Force unwrap value with !
-print(banana)
+if let value {
+    let banana: Int = value // Force unwrap value with !
+    print(banana)
+}
 
 // Excercise 19
 // Force unwrapping a nil value would cause a fatal error
